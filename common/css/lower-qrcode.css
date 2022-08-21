@@ -1,0 +1,95 @@
+:root{
+    /*Lower Third*/
+    --white: #fff;
+    --primary: rgba(57,51,2,1);
+
+	--main-background-color: #DDD;
+}
+
+@import "../fonts/RobotoCondensed/font.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+#box{
+    position: relative;
+}
+
+.code{
+    position: absolute;
+    left: -300px;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 15px;
+    transition: left .8s ease-out;
+    z-index: 5;
+}
+
+.code.show{
+    left: 75px;
+}
+
+.code .imgCode{
+    width: 200px;
+    height: 290px;
+    padding: 10px;
+}
+
+.code .imgCode img{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.code .title{
+    width: 170px;
+    height: 60px;
+    color: var(--white);
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contaBanco{
+    position: absolute;
+    top: 249px;
+    left: 65px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    transition: left 3s ease, opacity 1s;
+    opacity: 0;
+    z-index: 2;
+}
+
+.contaBanco.show{
+    left: 350px;
+    opacity: 1;
+}
+
+.contaBanco .naming{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.contaBanco .dados{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contaBanco .dados .box-dados{
+    margin: 0 10px;
+}
